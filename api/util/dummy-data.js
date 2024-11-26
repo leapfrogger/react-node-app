@@ -30,6 +30,19 @@ const defaultUserData = {
    city: faker.address.city()
 };
 
+const defaultUserData2 = {
+   email: faker.internet.email(),
+   password: 'admin123',
+   firstName: faker.name.firstName(),
+   lastName: faker.name.lastName(),
+   dateOfBirth: faker.date.between('1960-01-01', '2000-12-31'),
+   phone: faker.phone.phoneNumberFormat(1),
+   picture: faker.internet.avatar(),
+   streetAddr: faker.address.streetAddress(),
+   postcode: faker.address.zipCode(),
+   city: faker.address.city()
+};
+
 const createUser = () => {
    const user = new User({ ...defaultUserData });
 
