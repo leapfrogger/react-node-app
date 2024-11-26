@@ -2,7 +2,7 @@ version: 1
 type: npm
 resolver:
     repo: alpha-npm-virtual
-    serverId: rtsaas
+    serverId: soleng
 deployer:
     repo: alpha-npm-virtual
-    serverId: rtsaas
+    serverId: soleng
